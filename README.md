@@ -14,6 +14,7 @@ Understand the role of libraries (e.g., -lm for the math library).
 
 Learn about include guards to prevent redefinition errors.
 
+
 📂 Repository Contents
 
 main.c – Contains the main() function and program entry point.
@@ -23,6 +24,7 @@ shapes.c – Contains helper functions for shape-related calculations.
 shapes.h – Header file with function declarations.
 
 info.c, header1.c, header1.h, header2.c, header2.h – Example files to study include guards and file dependencies.
+
 
 🛠️ Compilation Instructions
 Compile shapes example
@@ -54,6 +56,7 @@ Windows
 gcc info.c header1.c header2.c -o info.exe
 info.exe
 
+
 🔹 How It Works: Include Guards
 
 #ifndef SHAPES_H
@@ -65,8 +68,10 @@ Defines SHAPES_H, ensuring that if the header is included again in the same file
 #endif
 Marks the end of the conditional code block started by #ifndef.
 
+
 Why important:
 Without include guards, multiple inclusion of the same header can lead to compilation errors due to redefinition of functions, variables, or data structures.
+
 
 ✨ Learning Outcomes
 
